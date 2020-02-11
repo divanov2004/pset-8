@@ -1,27 +1,32 @@
+* {
+  background-color: #5B84B1FF;
+  list-style-type: none;
+}
+
 body {
   text-align: center;
-  font-family: "Playfair Display", serif;
-  background-color: #DDC8A9
+  font-family: "Roboto", monospace;
 }
 
 h1 {
   margin: 0 auto;
-  font-family: 'Abril Fatface';
+  color: #FC766AFF;
+  font-family: "Major Mono Display", monospace;
   font-size: 48px;
   margin: 2%;
-  font-weight: 30;
-  color: #255440
 }
 
-
 h2 {
+  color: #FC766AFF;
   font-size: 36px;
   font-weight: lighter;
   margin: 2%;
-  color: #366147
 }
 
-
+.count {
+  color: #FC766AFF;
+  padding-bottom: 1px;
+}
 
 .container {
   display: flex;
@@ -29,14 +34,11 @@ h2 {
   align-items: center;
 }
 
-
-
 .column {
   height: 100%;
   width: 100%;
   flex-direction: column;
 }
-
 
 .wrap {
   flex-wrap: wrap;
@@ -45,8 +47,8 @@ h2 {
 }
 
 .square {
-  border: 1px solid;
-  border-color: #082828;
+  color: #FC766AFF;
+  border: 1px solid rgba(0, 0, 0, 0.75);
   font-size: 96px;
   height: 150px;
   line-height: 150px;
@@ -55,14 +57,14 @@ h2 {
 }
 
 .square:hover {
-  background-color: #366147;
+  background-color: #FC766AFF;
   cursor: pointer;
 }
 
-.resetButton {
-  background-color: #DDC8A9;
-  border: 1px solid #366147;
-  color: #366147;
+#reset-button {
+  background-color: #FC766AFF;
+  border: 1px solid black;
+  color: black;
   font-size: 21px;
   line-height: 55px;
   margin: 1%;
@@ -70,44 +72,21 @@ h2 {
   width: 456px;
 }
 
-.resetButton:hover {
-  background-color: #366147;
-  color: #DDC8A9;
+#reset-button:hover {
+  background-color: black;
+  color: white;
   cursor: pointer;
 }
 
-.turnButton {
-  background-color: #DDC8A9;
-  border: 1px solid #366147;
-  color: #366147;
-  font-size: 15px;
-  line-height: 30px;
-  margin: 1%;
-  text-align: center;
-  width: 200px;
-  font-family: 'Abril Fatface';
-  font-weight: lighter;
-  border-radius: 50px;
-}
-
-.turnButton:hover {
-  background-color: #366147;
-  color: #DDC8A9;
-  cursor: pointer;
-}
-
-table {
-  display: inline-block;
-  border-radius: 15px;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 7px;
-  padding-bottom: 7px;
-  font-size: 20px;
-  color: #366147
-}
+#xWinCount {
+   list-style-type: none;
+   float: left;
+ }
+#oWinCount {
+   list-style-type: none;
+   float: right;
+ }
+ #tieCount {
+   list-style-type: none;
+   float: right;
+ }
